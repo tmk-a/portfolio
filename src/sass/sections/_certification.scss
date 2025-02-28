@@ -1,0 +1,29 @@
+@use "sass:map";
+@use "../base/font";
+$base-class: certification;
+
+// .certification
+
+.#{$base-class} {
+  padding: 2rem 1rem;
+
+  &__title {
+    font-size: map.get(font.$font, font-size, medium);
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    background-color: rgb(240, 240, 240);
+  }
+
+  &__name {
+    padding: 0.2rem;
+  }
+
+  &__contents {
+    // background-color: rgb(240, 240, 240);
+    padding-bottom: 1rem;
+    padding-left: 0.3rem;
+    margin-left: 0.7rem;
+  }
+}

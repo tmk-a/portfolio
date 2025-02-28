@@ -110,6 +110,25 @@
   background-color: rgb(240, 240, 240);
 }
 
+.certification {
+  padding: 2rem 1rem;
+}
+.certification__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.certification__list {
+  background-color: rgb(240, 240, 240);
+}
+.certification__name {
+  padding: 0.2rem;
+}
+.certification__contents {
+  padding-bottom: 1rem;
+  padding-left: 0.3rem;
+  margin-left: 0.7rem;
+}
+
 :root {
   font-family: "Bai Jamjuree", "sans-serif";
   font-size: 16px;
