@@ -1,9 +1,5 @@
-@use "sass:map";
-@use "./base/font";
-
 :root {
-  font-family: map.get(font.$font, font-family, primary),
-    map.get(font.$font, font-family, generic);
+  font-family: "Bai Jamjuree", "sans-serif";
 }
 
 * {
@@ -27,3 +23,5 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+/*# sourceMappingURL=index.css.map */
