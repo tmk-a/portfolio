@@ -4,6 +4,7 @@
 :root {
   font-family: map.get(font.$font, font-family, primary),
     map.get(font.$font, font-family, generic);
+  font-size: 16px;
 }
 
 * {
@@ -22,8 +23,21 @@ body {
   flex-direction: column;
 }
 
+main {
+  padding: 1rem;
+}
+
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
