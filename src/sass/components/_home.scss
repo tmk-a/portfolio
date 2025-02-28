@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "../base/font";
+
+.home {
+  background-image: url(../../../images/home-background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  &__title {
+    font-size: map.get(font.$font, font-size, large);
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
