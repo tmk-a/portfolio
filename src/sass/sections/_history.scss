@@ -1,0 +1,29 @@
+@use "sass:map";
+@use "../base/font";
+$base-class: history;
+
+// .history
+
+.#{$base-class} {
+  padding: 2rem 1rem;
+
+  &__title {
+    font-size: map.get(font.$font, font-size, medium);
+    margin-bottom: 1rem;
+  }
+
+  &__date {
+    padding: 0.2rem;
+  }
+
+  &__contents {
+    padding-bottom: 1rem;
+    padding-left: 0.7rem;
+    margin-left: 0.5rem;
+    border-left: 1px solid;
+  }
+
+  &__contents-list {
+    background-color: rgb(240, 240, 240);
+  }
+}

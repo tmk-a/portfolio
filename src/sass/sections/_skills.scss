@@ -5,8 +5,8 @@ $base-class: skills;
 // .skills
 
 .#{$base-class} {
+  padding: 2rem 1rem;
   &__title {
-    // font-size: 2rem;
     font-size: map.get(font.$font, font-size, medium);
     margin-bottom: 1rem;
   }

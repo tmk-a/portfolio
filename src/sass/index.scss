@@ -4,6 +4,7 @@
 @use "./sections/home";
 @use "./sections/about";
 @use "./sections/skills";
+@use "./sections/history";
 
 :root {
   font-family: map.get(font.$font, font-family, primary),
