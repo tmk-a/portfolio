@@ -1,8 +1,9 @@
 @use "sass:map";
 @use "./base/font";
-@use "./components/header";
-@use "./components/home";
-@use "./components/about";
+@use "./sections/header";
+@use "./sections/home";
+@use "./sections/about";
+@use "./sections/skills";
 
 :root {
   font-family: map.get(font.$font, font-family, primary),
