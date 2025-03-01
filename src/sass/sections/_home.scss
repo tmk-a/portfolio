@@ -16,6 +16,13 @@
     font-size: map.get(font.$font, font-size, large);
   }
 
+  &__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: grayscale(1);
+  }
+
   &__contact {
     display: flex;
     justify-content: center;
