@@ -1,0 +1,33 @@
+@use "sass:map";
+@use "../base/font";
+$base-class: footer;
+
+// .footer
+
+.#{$base-class} {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+
+  background-image: url(../../../images/image-footer.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__nav {
+    margin-bottom: 3rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

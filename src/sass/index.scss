@@ -8,6 +8,7 @@
 @use "./sections/certification";
 @use "./sections/project";
 @use "./sections/contact";
+@use "./sections/footer";
 
 :root {
   font-family: map.get(font.$font, font-family, primary),

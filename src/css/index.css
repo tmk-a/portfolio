@@ -173,6 +173,30 @@
   gap: 1rem;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background-image: url(../../../images/image-footer.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.footer__nav {
+  margin-bottom: 3rem;
+}
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 :root {
   font-family: "Bai Jamjuree", "sans-serif";
   font-size: 16px;
