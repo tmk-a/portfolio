@@ -129,6 +129,35 @@
   margin-left: 0.7rem;
 }
 
+.project {
+  padding: 2rem 1rem;
+}
+.project__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.project__name {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.project__item {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 0.2rem 1rem;
+  height: 7rem;
+}
+.project__item-text {
+  width: 40%;
+}
+.project__image {
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 :root {
   font-family: "Bai Jamjuree", "sans-serif";
   font-size: 16px;
