@@ -1,5 +1,6 @@
-@use "sass:map";
-@use "./base/font";
+@use "./abstracts/base";
+@use "./abstracts/font";
+@use "./abstracts/screen-size";
 @use "./sections/header";
 @use "./sections/home";
 @use "./sections/about";
@@ -9,43 +10,3 @@
 @use "./sections/project";
 @use "./sections/contact";
 @use "./sections/footer";
-
-:root {
-  font-family: map.get(font.$font, font-family, primary),
-    map.get(font.$font, font-family, generic);
-  font-size: 16px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow: auto;
-}
-
-main {
-  padding: 1rem;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}

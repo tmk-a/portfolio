@@ -24,51 +24,60 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li>
-            <a href="#home">HOME</a>
-          </li>
-          <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a href="#skills">SKILLS</a>
-          </li>
-          <li>
-            <a href="#history">HISTORY</a>
-          </li>
-          <li>
-            <a href="#project">PROJECT</a>
-          </li>
-          <li>
-            <a href="#contact">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <button><i class="fa-solid fa-bars"></i></button>
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a href="#home">HOME</a>
+            </li>
+            <li>
+              <a href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a href="#skills">SKILLS</a>
+            </li>
+            <li>
+              <a href="#history">HISTORY</a>
+            </li>
+            <li>
+              <a href="#project">PROJECT</a>
+            </li>
+            <li>
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__humbergar">
+          <button><i class="fa-solid fa-bars"></i></button>
+        </div>
       </div>
     </header>
-    <section class="home">
-      <h1 class="home__title">
-        Building Reliable and Scalable Web Solutions.
-      </h1>
-      <h4>Tamaki Akita, Full stack Engineer</h4>
-      <div><img src="./../images/selfphoto.jpg" alt="tamaki" class="home__image"/></div>
-      <div class="home__contact">
-        <a href="mailto:tamaki.akita.jp@example.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-        <a href="https://github.com/tmk-a" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/tamaki-akita/" target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-      </div>
-    </section>
-    <main>
+
+    <main class="container">
+      <section class="home">
+        <h1 class="home__title">
+          Building Reliable and Scalable Web Solutions.
+        </h1>
+        <h4>Tamaki Akita, Full stack Engineer</h4>
+        <div>
+          <img
+            src="./../images/selfphoto.jpg"
+            alt="tamaki"
+            class="home__image"
+          />
+        </div>
+        <div class="home__contact">
+          <a href="mailto:tamaki.akita.jp@example.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a href="https://github.com/tmk-a" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/tamaki-akita/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </section>
       <section class="about">
         <h3 class="about__title">About Me</h3>
         <p class="about__text">
@@ -77,16 +86,17 @@
           including insurance management systems, government databases, and
           digital transformation initiatives. My responsibilities ranged from
           front-end and back-end development to project management and mentoring
-          junior engineers. <br />Currently, I am participating in a Web
-          Development co-op program in Canada, where I am enhancing my skills
-          through hands-on learning. I am particularly interested in front-end
-          development and database management, building on my previous work
-          experience. <br />With a strong background in software engineering and
-          a passion for continuous learning, I am eager to contribute to
-          innovative web solutions.
+          junior engineers. <br />
+          Currently, I am participating in a Web Development co-op program in
+          Canada, where I am enhancing my skills through hands-on learning. I am
+          particularly interested in front-end development and database
+          management, building on my previous work experience. <br />
+          With a strong background in software engineering and a passion for
+          continuous learning, I am eager to contribute to innovative web
+          solutions.
         </p>
       </section>
-      <section class="skills">
+      <section id="skills" class="skills">
         <h3 class="skills__title">Skills</h3>
         <ul class="skills__list">
           <li class="skills__big-category">
@@ -140,7 +150,6 @@
                 </ul>
               </li>
             </ul>
-            <ul></ul>
           </li>
           <li class="skills__big-category">
             <h4>Backend</h4>
@@ -214,7 +223,7 @@
                       src="https://img.icons8.com/?size=100&id=39040&format=png&color=000000"
                       alt="powershell-icon"
                       class="skills__item-image"
-                    ></img>
+                    />
                     <p class="skills__item-name">PowerShell</p>
                   </li>
                 </ul>
@@ -232,7 +241,7 @@
                   </li>
                   <li class="skills__item-container">
                     <i class="fa-solid fa-gears"></i>
-                    <p class="skills__item-name">trouble<br>shooting</p>
+                    <p class="skills__item-name">trouble<br />shooting</p>
                   </li>
                 </ul>
               </li>
@@ -387,35 +396,37 @@
             </div>
           </li>
           <li>
-            <h4 class="certification__name">Applied Information Technology Engineer Examination</h4>
+            <h4 class="certification__name">
+              Applied Information Technology Engineer Examination
+            </h4>
             <div class="certification__contents">
               <p>2022/6</p>
               <p>IPA: Information-technology Promotion Agency,Japan</p>
-           </div>
+            </div>
           </li>
         </ul>
       </section>
       <section class="project">
-      <h3 class="project__title">Project</h3>
-      <ul>
-        <li>
-          <div class="project__name">
-            <h4>Portfolio</h4>
-            <a href="#" ref="portfolio"
-            ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="project__item">
-            <div class="project__item-text">
-              <p>2025/2</p>
+        <h3 class="project__title">Project</h3>
+        <ul>
+          <li>
+            <div class="project__name">
+              <h4>Portfolio</h4>
+              <a href="#" ref="portfolio"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="project__image">
-              <img src="./../images/portfolio.png" alt="portfolio"/>
+            <div class="project__item">
+              <div class="project__item-text">
+                <p>2025/2</p>
+              </div>
+              <div class="project__image">
+                <img src="./../images/portfolio.png" alt="portfolio" />
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </section>
+          </li>
+        </ul>
+      </section>
       <section class="contact">
         <h2 class="contact__title">Let’s chat together!</h2>
         <address class="contact__address">

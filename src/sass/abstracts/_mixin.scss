@@ -1,0 +1,7 @@
+@use "./functions";
+
+@mixin responsive($size) {
+  @media (min-width: functions.get-width($size)) {
+    @content;
+  }
+}
