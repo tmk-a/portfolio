@@ -1,12 +1,9 @@
 @use "sass:map";
 @use "../abstracts/screen-size";
 @use "../abstracts/placeholders";
-
-@mixin responsive($size) {
-  @media (min-width: map.get(screen-size.$screen-size, $size)) {
-    @content;
-  }
-}
+@use "../abstracts/mixin";
+@use "../abstracts/font";
+@use "../abstracts/colors";
 
 .container {
   max-width: 1200px;
@@ -23,7 +20,7 @@
   background-color: white;
 
   &__humbergar {
-    @include responsive(sm) {
+    @include mixin.responsive(sm) {
       display: none;
     }
   }
@@ -31,8 +28,10 @@
   &__nav {
     display: none;
 
-    @include responsive(sm) {
+    @include mixin.responsive(sm) {
       display: flex;
+      font-size: map.get(font.$font, font-size, small);
+      color: map.get(colors.$colors, gray);
     }
   }
 

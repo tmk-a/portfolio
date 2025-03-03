@@ -4,10 +4,11 @@
 .about {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
+  padding: 4rem 0;
 
   &__title {
     font-size: map.get(font.$font, font-size, medium);
+    margin-bottom: 1rem;
   }
 
   &__text {
