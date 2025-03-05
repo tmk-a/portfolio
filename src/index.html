@@ -20,6 +20,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script src="./script/index.js" async defer></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -47,13 +49,42 @@
             </li>
           </ul>
         </nav>
-        <div class="header__humbergar">
-          <button><i class="fa-solid fa-bars"></i></button>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a class="menu__item" href="#home">HOME</a>
+            </li>
+            <li>
+              <a class="menu__item" href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a class="menu__item" href="#skills">SKILLS</a>
+            </li>
+            <li>
+              <a class="menu__item" href="#history">HISTORY</a>
+            </li>
+            <li>
+              <a class="menu__item" href="#project">PROJECT</a>
+            </li>
+            <li>
+              <a class="menu__item" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__hambergar">
+          <button class="button__hamburger">
+            <div class="menu__menuIcon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu__closeIcon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </button>
         </div>
       </div>
     </header>
 
-    <main class="container">
+    <main id="main" class="container">
       <section id="home" class="home">
         <h1 class="home__title">
           Building Reliable and Scalable Web Solutions.
@@ -401,7 +432,7 @@
           <li>
             <div class="project__name">
               <h4>Portfolio</h4>
-              <a href="#" ref="portfolio"
+              <a href="#home" ref="portfolio"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>

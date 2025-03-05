@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "../abstracts/colors";
+
+button {
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.button {
+  &__hamburger {
+    position: fixed;
+    padding: 0.2rem;
+    background-color: white;
+  }
+}
