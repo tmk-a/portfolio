@@ -1,25 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const menu = document.querySelector(".menu");
+  const menu = document.querySelector(".hamburger-menu");
   const menuItems = document.querySelectorAll(".menu__item");
-  const hamburgar = document.querySelector(".button__hamburger");
-  const closeIcon = document.querySelector(".menu__closeIcon");
-  const menuIcon = document.querySelector(".menu__menuIcon");
+  const hamburger = document.querySelector(".button__hamburger");
+  const closeIcon = document.querySelector(".hamburger-menu__closeIcon");
+  const menuIcon = document.querySelector(".hamburger-menu__menuIcon");
+
+  const showMenuHandler = () => {
+    menu.classList.add("hamburger-menu__showMenu");
+    menuIcon.style.display = "none";
+    closeIcon.style.display = "block";
+  };
+
+  const closeMenuHandler = () => {
+    menu.classList.remove("hamburger-menu__showMenu");
+    menuIcon.style.display = "block";
+    closeIcon.style.display = "none";
+  };
 
   const toggleMenu = () => {
-    if (menu.classList.contains("showMenu")) {
-      menu.classList.remove("showMenu");
-      closeIcon.style.display = "none";
-      menuIcon.style.display = "block";
+    if (menu.classList.contains("hamburger-menu__showMenu")) {
+      closeMenuHandler();
     } else {
-      menu.classList.add("showMenu");
-      closeIcon.style.display = "block";
-      menuIcon.style.display = "none";
+      showMenuHandler();
     }
   };
 
-  hamburgar.addEventListener("click", toggleMenu);
+  const reportWindowSize = () => {
+    if (window.innerWidth > 640) {
+      closeMenuHandler();
+    }
+  };
+
+  if (hamburger) {
+    hamburger.addEventListener("click", toggleMenu);
+  }
 
   menuItems.forEach(function (menuItem) {
-    menuItem.addEventListener("click", toggleMenu);
+    if (menuItem) {
+      menuItem.addEventListener("click", toggleMenu);
+    }
   });
+
+  window.addEventListener("resize", reportWindowSize);
 });
