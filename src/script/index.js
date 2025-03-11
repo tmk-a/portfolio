@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".button__hamburger");
   const closeIcon = document.querySelector(".hamburger-menu__closeIcon");
   const menuIcon = document.querySelector(".hamburger-menu__menuIcon");
+  const smallScreen = 640;
 
   const showMenuHandler = () => {
     menu.classList.add("hamburger-menu__showMenu");
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const reportWindowSize = () => {
-    if (window.innerWidth > 640) {
+    if (window.innerWidth > smallScreen) {
       closeMenuHandler();
     }
   };

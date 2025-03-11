@@ -25,6 +25,7 @@ $base-class: contact;
 
   &__address {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
+    padding: 1rem;
   }
 }
