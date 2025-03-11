@@ -1,0 +1,27 @@
+@use "sass:map";
+@use "../abstracts/colors";
+@use "../abstracts/mixin";
+
+button {
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.button {
+  &__hamburger {
+    padding: 0.2rem;
+    background-color: white;
+    border: black solid 1px;
+    z-index: 1002;
+    width: 2rem;
+    height: 2rem;
+
+    @include mixin.responsive(sm) {
+      display: none;
+    }
+  }
+}

@@ -19,12 +19,6 @@
   z-index: 1000;
   background-color: white;
 
-  &__humbergar {
-    @include mixin.responsive(sm) {
-      display: none;
-    }
-  }
-
   &__nav {
     display: none;
 
