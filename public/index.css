@@ -91,7 +91,7 @@ li {
 }
 
 .home {
-  background-image: url(../../../images/home-background.jpg);
+  background-image: url(./images/home-background.jpg);
   background-size: cover;
   background-position: center;
   padding: 3rem 1rem;
@@ -302,7 +302,7 @@ li {
 .footer {
   display: flex;
   flex-direction: column;
-  background-image: url(../../../images/image-footer.jpg);
+  background-image: url(./images/image-footer.jpg);
   background-size: cover;
   background-position: center;
 }
