@@ -4,7 +4,7 @@
   "description": "## Goal",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass -w src/sass:src/css",
+    "build:css": "sass -w src/sass:public",
     "live": "live-server src --verbose",
     "dev": "concurrently \"npm run build:css\" \"npm run live\""
   },
@@ -13,6 +13,6 @@
   "devDependencies": {
     "concurrently": "^8.2.1",
     "live-server": "^1.2.2",
-    "sass": "^1.69.3"
+    "sass": "^1.86.0"
   }
 }
